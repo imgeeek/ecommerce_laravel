@@ -19,11 +19,44 @@
 @yield('content') {{--Including the contents from all other blade templates --}}
 {{View::make('footer')}} {{-- Includes the footer file --}}
 </body>
+
 <style>
-    .custom-style{
-      position:fixed;
-      bottom:0;
+    /* .custom-style{
+     position: absolute;
+      bottom:0em;
       width:100%;
+    } */
+    .carousel_image{
+        height:70vh;
+        width:100%;
+    }
+    .sandesh{
+        background:transparent(black);
+    }
+    .trending-wrapper{display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.trending h1{
+    text-align:center;
+}
+    .trending{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .item-phone{
+        height:30em;
+        width:20em;
+        padding:2em;
+        border-radius: 12px;
+    }
+    .trending a{
+        text-decoration: none;
+        color:red;
     }
 </style>
 </html>
